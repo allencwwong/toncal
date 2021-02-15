@@ -1,0 +1,29 @@
+.bg-img{
+    position: absolute;
+    z-index: -1;
+    width: 40%;
+    height: auto;
+}
+
+@media (min-width: 992px){
+    .bg-img{
+        width: 100%;
+    }
+}
+
+/* ing card */
+.ing-card{
+    border: 1px solid #e4e4e4;
+    height: 100px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    color: #000
+}
+
+.ing-card.ing-card-wrapper .bg-img img{
+    /* left: -180px !important; */
+    /* top: -56px !important; */
+    max-width: 300px;
+    max-height: 100px;
+}
