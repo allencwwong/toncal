@@ -25,14 +25,14 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="雲吞機" />
         <Container as="section">
           <Row>
             <Col xs={6} md={4}>
               <h1>多少包?</h1>
             </Col>
             <Col xs={6} md={8}>
-              <input onChange={(e) => HandleAmtChange(e)} min="1" max="100" type="number" placeholder="1" />
+              <input class="input-amt" onChange={(e) => HandleAmtChange(e)} min="1" max="100" type="number" placeholder="1" pattern="[0-9]*" novalidate />
             </Col>
           </Row>
           <Strip tonType="wrapper" tonData={tonData}></Strip>

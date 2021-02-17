@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Ton Calculator`,
+    title: `雲吞機`,
     description: `calculate ingredient amount for tons`,
     author: `allencwwong`,
   },
