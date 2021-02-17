@@ -19,7 +19,7 @@ const IndexPage = () => {
     }
 
     setTonData({
-      'wrapper' : amt*baseTonIng.wrapper , 'mushroom': amt*baseTonIng.mushroom , 'woodear': amt*baseTonIng.woodear , 'shrimp': amt*baseTonIng.shrimp, 'meat': amt*baseTonIng.meat
+      'wrapper' : amt*baseTonIng.wrapper , 'mushroom': amt*baseTonIng.mushroom , 'woodear': amt*baseTonIng.woodear , 'shrimp': amt*baseTonIng.shrimp, 'shrimp-tail': amt*baseTonIng['shrimp-tail'], 'meat': amt*baseTonIng.meat
     });
   }
 
