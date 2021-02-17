@@ -1,3 +1,6 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
 .sm{
     font-size: .875rem;
 }
@@ -36,6 +39,7 @@
 }
 
 .input-amt{
+    width: 80%;
     height: 40px;
     font-size: 1.5rem;
     text-align: center;
@@ -57,4 +61,9 @@
     font-weight: 600;
     margin-top: 1.2rem;
     margin-left: -15px;
+}
+
+.ing-total{
+    font-size: 1.6rem;
+    font-weight: 600;
 }

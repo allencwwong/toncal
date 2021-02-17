@@ -23,6 +23,8 @@ const IndexPage = () => {
     });
   }
 
+  const totalWeight = tonData.wrapper + tonData.mushroom + tonData.woodear + tonData.shrimp + tonData['shrimp-tail'] + tonData.meat;
+
   return (
     <Layout>
       <SEO title="雲吞機" />
@@ -32,14 +34,20 @@ const IndexPage = () => {
               <h1>多少包?</h1>
             </Col>
             <Col xs={6} md={8}>
-              <input class="input-amt" onChange={(e) => HandleAmtChange(e)} min="1" max="100" type="number" placeholder="1" pattern="[0-9]*" novalidate />
+              <input className="input-amt" onChange={(e) => HandleAmtChange(e)} min="1" max="100" type="number" placeholder="1" pattern="[0-9]*" novalidate />
             </Col>
           </Row>
           <Strip tonType="wrapper" tonData={tonData}></Strip>
           <Strip tonType="mushroom" tonData={tonData}></Strip>
           <Strip tonType="woodear" tonData={tonData}></Strip>
           <Strip tonType="shrimp" tonData={tonData}></Strip>
+          <Strip tonType="shrimp-tail" tonData={tonData}></Strip>
           <Strip tonType="meat" tonData={tonData}></Strip>
+          <Row>
+            <Col>
+              <p className="ing-total">Total: { totalWeight }oz | { totalWeight/16 } lbs </p>
+            </Col>
+          </Row>
         </Container>
     </Layout>
   )
