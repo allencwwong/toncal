@@ -7,11 +7,11 @@ import Meat from "./../src/components/Meat"
 
 export const baseTonIng = {
     "wrapper": 8,
-    "mushroom": 6,
+    "mushroom": 1,
     "woodear": 1.5,
     "shrimp": 5,
     "shrimp-tail": 4, 
-    "meat": 7.5
+    "meat": 12.5
   }
 
 export const tonIngInfo = {
